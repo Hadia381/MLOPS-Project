@@ -25,7 +25,7 @@ jobs:
         pip install isort[requirements_deprecated_finder,pipfile_deprecated_finder]
         pip install -r requirements.txt
     - name: Run Black
-      run: black aalee.py  # Update file pattern to abc.py
+      run: black abd/aalee.py  # Update file pattern to abc.py
    
     - name: Run AutoFlake
-      run: autoflake --in-place --remove-unused-variables --remove-all-unused-imports --recursive aalee.py  # Update file pattern to abc.py
+      run: autoflake --in-place --remove-unused-variables --remove-all-unused-imports --recursive abd/aalee.py  # Update file pattern to abc.py
