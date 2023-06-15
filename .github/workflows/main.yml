@@ -20,7 +20,6 @@ jobs:
         python-version: 3.9
     - name: Install Dependencies
       run: |
-        pip install -r requirements.txt
         python -m pip install --upgrade pip
         pip install pylint black autoflake
         pip install isort[requirements_deprecated_finder,pipfile_deprecated_finder]
